@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Academia Sinica AI</title>
+   <style>
+      body {
+	 margin:0;
+	 padding: 0;
+      }
+      .logodiv {
+         position: fixed;
+	 z-index:1000;
+	 left: 50%;
+	 transform: translate(-50%, 0%);
+      }
+      .logodiv img {
+         width: 600px;
+      }
+      .container {
+	 margin:0;
+	 padding: 0;
+         display: flex; /* 使用 Flexbox 來排列內容 */
+	 min-height:100vh;
+      }
+      .item {
+	display: flex;
+	margin:0;
+	padding: 0;
+        flex: 1; /* 使每個項目均分剩餘空間 */
+        text-align: center; /* 選擇性地設置文字置中 */
+        padding: 0px; /* 選擇性地增加內邊距 */
+	justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+	place-items: center; /* 居中内容 */
+	vertical-align: middle; /* 垂直居中 */
+      }
+      .picPurple {
+         background: url('images/purple.png') no-repeat;
+         background-size: cover;
+      }
+      .picBlue {
+         background: url('images/blue.png') no-repeat;
+         background-size: cover;
+      }
+      .picPink {
+         background: url('images/pink.png') no-repeat;
+         background-size: cover;
+      }
+      .item img {
+         width: 70%;
+	 height: auto;
+	 transform: scale(0.7);
+      }
+      .fontdiv {
+	 font-family: Arial, sans-serif; /* 設置字體 */
+	 margin:0;
+	 margin-top: 200px;
+	 padding: 0;
+	 font-size: 20pt;
+         font-weight: bold;
+      }
+      .white { color: white; }
+      .black { color: black; }
+      a {
+         text-decoration: none; 
+      }
+      /* 小螢幕尺寸（例如智慧型手機） */
+      @media (max-width: 768px) {
+	 .container {
+	    display: flex; /* 啟用彈性布局 */
+            flex-direction: column; /* 設定主軸方向為垂直 */
+	    align-items: center; /* 設定項目在主軸上的對齊方式為置中 */
+	 }
+         .logodiv img {
+            width: 380px;
+         }
+         .fontdiv {
+	    margin-top: 120px;
+	    font-size: 18pt;
+            font-weight: bold;
+	 }
+         .item img {
+            width: 98%;
+         }
+      }
+      /* 超小螢幕尺寸（例如平板電腦） */
+      @media (max-width: 480px) {
+         .logodiv img {
+            width: 370px;
+         }
+        .fontdiv {
+	   margin: 0;
+	   padding: 0;
+	   margin-top: 110px;
+	   font-size: 18pt;
+           font-weight: bold;
+	}
+        .item img {
+	   margin: 0;
+           width: 100%;
+        }
+      }
+   </style>
+</head>
+<body>
+  <div class="logodiv">
+     <img src="images/logo.png" border=0 alt="中央研究院 AI 服務平台 Academia Sinica AI Portal">
+  </div>
+  <div class="container">
+      <div class="item picPurple">
+	 <div>
+	    <div class="fontdiv">
+	       <a href="https://devtaide.test5.sinica.edu.tw:10000/ui/chat/53cf1108a3119e36" class="white">即時互動 AI<br>
+		Real-time Interactive AI
+	    </div>
+	    <img src="images/3-1.png" border=0></a>
+         </div>
+      </div>
+      <div class="item picBlue">
+	 <div>
+	    <div class="fontdiv">
+	       知識探索 AI<br>
+	       Knowledge Discovery AI
+	    </div>
+            <img src="images/3-2.png" border=0>
+         </div>
+      </div>
+      <div class="item picPink">
+	 <div>
+	    <div class="fontdiv">
+	       <a href="/homepage" class="black">主題套餐 AI <br>
+	       Thematic Package AI</a>
+	    </div>
+	    <a href="/homepage" class="black"><img src="images/3-3.png" border=0></a>
+	 </div>
+      </div>
+   </div>
+   <!--
+   <script async defer src="https://devtaide.test5.sinica.edu.tw:10000/api/application/embed?protocol=https&host=devtaide.test5.sinica.edu.tw:10000&token=53cf1108a3119e36">
+</script>
+</script>
+-->
+</body>
+</html>
+
